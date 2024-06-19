@@ -1,0 +1,84 @@
+{
+    "hotel": {
+        "name": "Luxury Hotel",
+        "location": "City Center",
+        "rating": 4.5,
+        "contact": "+1234567890"
+    },
+    "cuisines": [
+        {
+            "name": "Italian",
+            "ingredients": [
+                {
+                    "name": "Tomato Sauce",
+                    "source": "Farm Fresh Tomatoes",
+                    "vendors": [
+                        {
+                            "name": "Fresh Farms Inc.",
+                            "rating": 4.2,
+                            "contact": "+1987654321"
+                        },
+                        {
+                            "name": "Organic Suppliers Ltd.",
+                            "rating": 4.8,
+                            "contact": "+1876543210"
+                        }
+                    ]
+                },
+                {
+                    "name": "Parmesan Cheese",
+                    "source": "Local Dairy",
+                    "vendors": [
+                        {
+                            "name": "Dairy Delights",
+                            "rating": 4.5,
+                            "contact": "+1654321879"
+                        },
+                        {
+                            "name": "Artisan Cheese Co.",
+                            "rating": 4.6,
+                            "contact": "+1765432109"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Japanese",
+            "ingredients": [
+                {
+                    "name": "Soy Sauce",
+                    "source": "Japanese Importers",
+                    "vendors": [
+                        {
+                            "name": "Tokyo Trading",
+                            "rating": 4.9,
+                            "contact": "+1543210987"
+                        },
+                        {
+                            "name": "Osaka Suppliers",
+                            "rating": 4.7,
+                            "contact": "+1987654321"
+                        }
+                    ]
+                },
+                {
+                    "name": "Sushi Rice",
+                    "source": "Rice Farmers Co-op",
+                    "vendors": [
+                        {
+                            "name": "Rice Fields Inc.",
+                            "rating": 4.4,
+                            "contact": "+1654321987"
+                        },
+                        {
+                            "name": "Far East Foods",
+                            "rating": 4.6,
+                            "contact": "+1876543210"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

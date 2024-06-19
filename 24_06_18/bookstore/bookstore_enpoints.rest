@@ -1,0 +1,106 @@
+###  verification urls  ###
+
+POST http://127.0.0.1:8000/login
+Content-Type: application/json
+
+{
+    "username": "<username>",
+    "password": "<password>"
+}
+
+###
+
+POST http://127.0.0.1:8000/signup
+Content-Type: application/json
+
+{
+    "username": "<username>",
+    "password": "<password>",
+    "email": "<mail>"
+}
+
+###
+
+GET http://127.0.0.1:8000/test-token
+Content-Type: application/json
+Authorization: Token <authentication-token>
+
+{}
+
+###  api urls ###
+
+PUT http://127.0.0.1:8000/api/update-author/4
+Authorization: Token <authentication-token>
+Content-Type: application/json
+
+{
+    "<field>": "<value>"
+}
+
+###
+
+GET http://127.0.0.1:8000/api/authors
+Content-Type: application/json
+Authorization: Token <authentication-token>
+
+{}
+
+###
+
+GET http://127.0.0.1:8000/api/author-detail/2
+Content-Type: application/json
+Authorization: Token <authentication-token>
+
+{}
+
+###
+
+DELETE http://127.0.0.1:8000/api/delete-author/2
+Content-Type: application/json
+Authorization: Token <authentication-token>
+
+{}
+
+###
+
+POST http://127.0.0.1:8000/api/create-book
+Content-Type: application/json
+Authorization: Token <authentication-token>
+
+{
+    "<field>": "<value>"
+}
+
+###
+
+PUT http://127.0.0.1:8000/api/update-book/1
+Content-Type: application/json
+Authorization: Token <authentication-token>
+
+{
+    "<field>": "<value>"
+}
+
+###
+
+GET http://127.0.0.1:8000/api/all-books/
+Content-Type: application/json
+Authorization: Token <authentication-token>
+
+{}
+
+###
+
+GET http://127.0.0.1:8000/api/get-book/1
+Content-Type: application/json
+Authorization: Token <authentication-token>
+
+{}
+
+###
+
+DELETE http://127.0.0.1:8000/api/delete-book/1
+Content-Type: application/json
+Authorization: Token <authentication-token>
+
+{}
