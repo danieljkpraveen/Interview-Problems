@@ -10,7 +10,6 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.authentication import (
-    SessionAuthentication,
     TokenAuthentication
 )
 
@@ -30,7 +29,6 @@ from .models import (
 
 @api_view(['PUT'])
 @authentication_classes([
-    SessionAuthentication,
     TokenAuthentication
 ])
 @permission_classes([IsAuthenticated])
@@ -66,7 +64,6 @@ def update_user_and_author(request, pk):
 
 @api_view(['GET'])
 @authentication_classes([
-    SessionAuthentication,
     TokenAuthentication
 ])
 @permission_classes([IsAuthenticated])
@@ -80,7 +77,6 @@ def get_authors(request):
 
 @api_view(['GET'])
 @authentication_classes([
-    SessionAuthentication,
     TokenAuthentication
 ])
 @permission_classes([IsAuthenticated])
@@ -95,7 +91,6 @@ def author_detail(request, pk):
 
 @api_view(['DELETE'])
 @authentication_classes([
-    SessionAuthentication,
     TokenAuthentication
 ])
 @permission_classes([IsAuthenticated])
@@ -117,7 +112,6 @@ def delete_author(request, pk):
 
 @api_view(['POST'])
 @authentication_classes([
-    SessionAuthentication,
     TokenAuthentication
 ])
 @permission_classes([IsAuthenticated])
@@ -135,7 +129,6 @@ def create_book(request):
 
 @api_view(['PUT'])
 @authentication_classes([
-    SessionAuthentication,
     TokenAuthentication
 ])
 @permission_classes([IsAuthenticated])
@@ -160,7 +153,6 @@ def update_book(request, pk):
 
 @api_view(['GET'])
 @authentication_classes([
-    SessionAuthentication,
     TokenAuthentication
 ])
 @permission_classes([IsAuthenticated])
@@ -174,7 +166,6 @@ def get_all_books(request):
 
 @api_view(['GET'])
 @authentication_classes([
-    SessionAuthentication,
     TokenAuthentication
 ])
 @permission_classes([IsAuthenticated])
@@ -188,7 +179,6 @@ def get_book(request, pk):
 
 @api_view(['DELETE'])
 @authentication_classes([
-    SessionAuthentication,
     TokenAuthentication
 ])
 @permission_classes([IsAuthenticated])
