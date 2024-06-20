@@ -73,8 +73,8 @@ def signup(request):
 
 @api_view(['GET'])
 @authentication_classes([
-    SessionAuthentication,
-    TokenAuthentication
+    SessionAuthentication,  # enables auth using session id
+    TokenAuthentication  # enables auth using token
 ])
 @permission_classes([IsAuthenticated])
 def test_token(request):
